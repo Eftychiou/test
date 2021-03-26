@@ -13,7 +13,7 @@ export default function HomePage({ name }) {
 export async function getServerSideProps({ params, req, res }) {
 
   try {
-    const response = await axios('http://localhost:3000/api/hello/')
+    const response = await axios('/api/hello/')
     const name = response.data.name
 
     return {
