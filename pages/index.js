@@ -13,7 +13,7 @@ export default function HomePage({ name }) {
 export async function getServerSideProps({ params, req, res }) {
 
   try {
-    const response = await axios('/api/hello/')
+    const response = await axios('https://test-xi-sepia.vercel.app/api/hello/')
     const name = response.data.name
 
     return {
